@@ -17,6 +17,9 @@ def secrets(request, host_id):
     if not request.user.is_authenticated():
         return HttpResponseRedirect('/login')
 
+    if not request.user.is_staff:
+        raise PermissionDenied
+
     errors = []
     secrets_all = []
     compute = Compute.objects.get(id=host_id)
