@@ -15,6 +15,9 @@ if ROOT_PATH not in sys.path:
 # if VENV_PATH not in sys.path:
 # sys.path.append(VENV_PATH)
 
+import django
+django.setup()
+
 import Cookie
 import socket
 from webvirtmgr.settings import WS_PORT, WS_HOST, WS_CERT
@@ -141,13 +144,13 @@ class CompatibilityMixIn(object):
          console_socket) = get_connection_infos(token)
 
         cnx_debug_msg = "Connexion infos :\n"
-        cnx_debug_msg += "- connhost : '%s'\n" % connhost 
-        cnx_debug_msg += "- connport : '%s'\n" % connport 
-        cnx_debug_msg += "- connuser : '%s'\n" % connuser 
-        cnx_debug_msg += "- conntype : '%s'\n" % conntype 
-        cnx_debug_msg += "- console_host : '%s'\n" % console_host 
-        cnx_debug_msg += "- console_port : '%s'\n" % console_port 
-        cnx_debug_msg += "- console_socket : '%s'\n" % console_socket 
+        cnx_debug_msg += "- connhost : '%s'\n" % connhost
+        cnx_debug_msg += "- connport : '%s'\n" % connport
+        cnx_debug_msg += "- connuser : '%s'\n" % connuser
+        cnx_debug_msg += "- conntype : '%s'\n" % conntype
+        cnx_debug_msg += "- console_host : '%s'\n" % console_host
+        cnx_debug_msg += "- console_port : '%s'\n" % console_port
+        cnx_debug_msg += "- console_socket : '%s'\n" % console_socket
         logging.debug(cnx_debug_msg)
 
         if console_socket and conntype == CONN_SOCKET:

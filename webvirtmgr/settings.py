@@ -2,7 +2,7 @@
 import os
 import logging
 
-
+TEST_RUNNER = 'django.test.runner.DiscoverRunner'
 DEBUG = False
 TEMPLATE_DEBUG = DEBUG
 
