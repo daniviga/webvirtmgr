@@ -1,10 +1,14 @@
+## Deprecation WARNING
+
+The upstream project ([**WebVirtMgr**](https://github.com/retspen/webvirtmgr/)) is unmaintained since 2016, so also this project has been deprecated.
+
 ## WebVirtMgr panel \(a fork by [daniviga](http://daniele.vigano.me)\)
 
 Based on [**WebVirtMgr v4.8.9**](https://github.com/retspen/webvirtmgr/)
 
-http://vfamilyserver.org/blog/2014/11/webvirtmgr-with-lxc-support/
+https://daniele.vigano.me/blog/2014/11/webvirtmgr-with-lxc-support/
 
-![dashboard](http://vfamilyserver.org/blog/wp-content/uploads/2014/11/Screen-Shot-2014-11-16-at-12.10.08-1024x349.png)
+![dashboard](https://daniele.vigano.me/blog/wp-content/uploads/2014/11/Screen-Shot-2014-11-16-at-12.10.08-1024x349.png)
 
 ### Introduction
 
