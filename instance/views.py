@@ -42,8 +42,8 @@ def instusage(request, host_id, vname):
     points = 5
     curent_time = time.strftime("%H:%M:%S")
     compute = Compute.objects.get(id=host_id)
-    cookies = request._get_cookies()
     response = HttpResponse()
+    cookies = request.COOKIES
     response['Content-Type'] = "text/javascript"
 
     try:
